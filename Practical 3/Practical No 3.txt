@@ -1,0 +1,146 @@
+Practical No 3
+
+public class Employee 
+{
+    private String Name;
+    private int Age;
+    private float Salary;
+    
+    public void setName(String name)
+    {
+       this.Name=name;       
+    }
+    public String getName()
+    {
+        return Name;
+    }
+     public void setAge(int age)
+    {
+       this.Age=age;       
+    }
+    public int getAge()
+    {
+        return Age;
+    }
+     public void setSalary(float salary)
+    {
+       this.Salary=salary;       
+    }
+    public float getSalary()
+    {
+        return Salary;
+    }
+}
+public class Test
+{
+
+    public static void main(String[] args)
+    {
+       Employee E1=new Employee();
+       E1.setName("Jeneesha");
+        System.out.println(E1.getName());
+       E1.setAge(21);
+        System.out.println(E1.getAge());
+       E1.setSalary(250000.00f);
+        System.out.println(E1.getSalary());
+       
+    }
+}
+__________________________________________________________________________________________________________________________________________
+public class Employee 
+{
+    private String Name;
+    private int Age;
+    private float Salary;
+    
+    public Employee(String name,int age,float salary)
+    {
+       this.Name=name;    
+       this.Age=age;
+       this.Salary=salary;
+    }
+    public String getName()
+    {
+        return Name;
+    }
+     
+    public int getAge()
+    {
+        return Age;
+    }
+     
+    public float getSalary()
+    {
+        return Salary;
+    }
+}
+public class Test
+{
+
+    public static void main(String[] args)
+    {
+       Employee E1=new Employee("Jeneesha",21,250000.00f);
+       
+        System.out.println(E1.getName());
+     
+        System.out.println(E1.getAge());
+     
+        System.out.println(E1.getSalary());
+       
+    }
+}
+_____________________________________________________________________________________________________________________________
+
+public class Employee 
+{
+    private String EmpName;
+    private float BSalary;
+    private float Bonus;
+    private float BonusAmount;
+    
+    public void setEname(String ename)
+    {
+        this.EmpName=ename;        
+    }
+    public String getName()
+    {
+        return(EmpName);
+    }
+    public void setBSalary(float bsalary)
+    {
+        this.BSalary=bsalary;        
+    }
+    public float getBSalary()
+    {
+       return(BSalary);
+    }
+    public Employee(float  bonus)
+    {
+        this.Bonus=bonus;
+    }
+    public void FindBonusAmount()
+    {
+       BonusAmount=BSalary+Bonus; 
+        System.out.println("Bonus Amount:"+BonusAmount);
+    }
+}
+
+public class Excercise3
+{
+
+    public static void main(String[] args)
+    {
+        Employee E1=new Employee(10000.00f);
+        E1.setEname("Bogdan");
+        System.out.println("Employee name:"+E1.getName());
+        E1.setBSalary(50000);
+        System.out.println("Basic Salary:"+E1.getBSalary());
+        E1.FindBonusAmount();
+        
+    }
+}
+
+
+
+
+
